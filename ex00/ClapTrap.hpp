@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 13:26:07 by hbaddrul          #+#    #+#             */
-/*   Updated: 2022/02/08 16:05:20 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2022/02/08 17:37:08 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ using std::string;
 class ClapTrap {
  public:
     ClapTrap(void);
-    explicit ClapTrap(string named);
+    explicit ClapTrap(string name);
     ClapTrap(const ClapTrap &claptrap);
     ClapTrap &operator=(const ClapTrap &claptrap);
     ~ClapTrap(void);

@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/08 13:27:00 by hbaddrul          #+#    #+#             */
-/*   Updated: 2022/02/08 16:33:00 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2022/02/08 21:45:36 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ using std::cout;
 using std::endl;
 using std::string;
 
-ClapTrap::ClapTrap(void) {
+ClapTrap::ClapTrap(void) : name_(""), hp_(10), ep_(10), ad_(0) {
     cout << "A ClapTrap was constructed" << endl;
 }
 
@@ -33,6 +33,7 @@ ClapTrap::ClapTrap(const ClapTrap &claptrap) {
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &claptrap) {
     cout << "ClapTrap " << claptrap.name_ << " was cloned" << endl;
+
     if (this != &claptrap) {
         name_ = claptrap.name_;
         hp_ = claptrap.hp_;
